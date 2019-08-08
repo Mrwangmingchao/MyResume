@@ -1,120 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<title>MyResume</title>
-<!-- for-mobile-apps -->
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="keywords" content="" />
-<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+	<title>MyResume</title>
+	<!-- for-mobile-apps -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="keywords" content="" />
+	<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
 		function hideURLbar(){ window.scrollTo(0,1); } </script>
-<!-- //for-mobile-apps -->
-<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
-<link href="css/font-awesome.css" rel="stylesheet" type="text/css" media="all" />
-<link rel="stylesheet" href="css/chocolat.css" type="text/css" media="screen"><!-- chocolate css for gallery light box-->
-<!-- animation -->
-<link href="css/animate.css" rel="stylesheet" type="text/css" media="all">
-<!-- //animation --> 
-<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
-<script src="js/jquery-1.11.1.min.js"></script>
-<script src="js/bootstrap.js"></script>
-<script type="text/javascript">
-	jQuery(document).ready(function($) {
-		$(".scroll").click(function(event){		
-			event.preventDefault();
-			$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+	<!-- //for-mobile-apps -->
+	<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+	<link href="css/font-awesome.css" rel="stylesheet" type="text/css" media="all" />
+	<link rel="stylesheet" href="css/chocolat.css" type="text/css" media="screen">
+	<!-- chocolate css for gallery light box-->
+	<!-- animation -->
+	<link href="css/animate.css" rel="stylesheet" type="text/css" media="all">
+	<!-- //animation -->
+	<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+	<script src="js/jquery-1.11.1.min.js"></script>
+	<script src="js/bootstrap.js"></script>
+	<script type="text/javascript">
+		jQuery(document).ready(function ($) {
+			$(".scroll").click(function (event) {
+				event.preventDefault();
+				$('html,body').animate({ scrollTop: $(this.hash).offset().top }, 1000);
+			});
 		});
-	});
-</script>
-<!-- onlinefonts -->
-<link href="http://fonts.googleapis.com/css?family=Dancing+Script:400,700" rel="stylesheet">
-<link href="http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:200,300,400,700" rel="stylesheet">
-<!-- //onlinefonts -->
+	</script>
+	<script src="https://cdn.bootcss.com/echarts/4.2.1-rc1/echarts-en.common.js"></script>
+	<!-- onlinefonts -->
+	<link href="http://fonts.googleapis.com/css?family=Dancing+Script:400,700" rel="stylesheet">
+	<link href="http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:200,300,400,700" rel="stylesheet">
+	<!-- //onlinefonts -->
 </head>
-<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top"> 
-		<!-- header -->
-		<div class="header-w3layouts"> 
-			<!-- Navigation -->
-			<nav class="navbar navbar-default navbar-fixed-top">
-				<div class="container">
-					<div class="navbar-header page-scroll">
-						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-							<span class="sr-only">Vitae</span>
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-						</button>
-						<h1><a class="navbar-brand" href="index.html">Resume</a></h1>
-					</div> 
-					<!-- Collect the nav links, forms, and other content for toggling -->
-					<div class="collapse navbar-collapse navbar-ex1-collapse">
-						<ul class="nav navbar-nav navbar-right">
-							<!-- Hidden li included to remove active class from about link when scrolled up past about section -->
-							<li class="hidden"><a class="page-scroll" href="#page-top"></a></li>
-							<li><a class="page-scroll scroll active" href="#home">Home</a></li>
-							<li><a class="page-scroll scroll" href="#about">About</a></li>
-							<li><a class="page-scroll scroll" href="#port">Portfolio</a></li>
-							<li><a class="page-scroll scroll" href="#edu">Education</a></li>
-							<li><a class="page-scroll scroll" href="#exp">Experience</a></li>
-							<li><a class="page-scroll scroll" href="#contact">Contact</a></li>
-						</ul>
-					</div>
-					<!-- /.navbar-collapse -->
-				</div>
-				<!-- /.container -->
-			</nav>  
-		</div>	
-		<!-- //header -->
-		<div class="header jarallax" id="home">
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+	<!-- header -->
+	<div class="header-w3layouts">
+		<!-- Navigation -->
+		<nav class="navbar navbar-default navbar-fixed-top">
 			<div class="container">
-				<div class="banner-text text-center">
-					<h2>汪明超</h2>
-					<h3> - web前端工程师(3年) - </h3>
-					<p>Don't aim for success if you want it; just do what you love and believe in, and it will come naturally. </p>
-					<div class="w3l-button banner-btn">
-							<a href="#">Action</a>
-					</div>
-				</div>	
-				<div class="w3-arrow bounce animated">
+				<div class="navbar-header page-scroll">
+					<button type="button" class="navbar-toggle" data-toggle="collapse"
+						data-target=".navbar-ex1-collapse">
+						<span class="sr-only">Vitae</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<h1><a class="navbar-brand" href="index.html">Resume</a></h1>
+				</div>
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse navbar-ex1-collapse">
+					<ul class="nav navbar-nav navbar-right">
+						<!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+						<li class="hidden"><a class="page-scroll" href="#page-top"></a></li>
+						<li><a class="page-scroll scroll active" href="#home">Home</a></li>
+						<li><a class="page-scroll scroll" href="#about">自我认知</a></li>
+						<li><a class="page-scroll scroll" href="#port">项目展示</a></li>
+						<li><a class="page-scroll scroll" href="#edu">技能简介</a></li>
+						<li><a class="page-scroll scroll" href="#exp">项目详情</a></li>
+						<li><a class="page-scroll scroll" href="#contact">联系我</a></li>
+					</ul>
+				</div>
+				<!-- /.navbar-collapse -->
+			</div>
+			<!-- /.container -->
+		</nav>
+	</div>
+	<!-- //header -->
+	<div class="header jarallax" id="home">
+		<div class="container">
+			<div class="banner-text text-center">
+				<h2>汪明超</h2>
+				<h3> - web前端工程师(3年) - </h3>
+				<p>Don't aim for success if you want it; just do what you love and believe in, and it will come
+					naturally. </p>
+				<div class="w3l-button banner-btn">
+					<a href="#">Action</a>
+				</div>
+			</div>
+			<div class="w3-arrow bounce animated">
 				<a href="#about" class="scroll"><i class="fa fa-angle-down" aria-hidden="true"></i></a>
 			</div>
-			</div>
-			
 		</div>
-		
+
+	</div>
+
 	<div class="about" id="about">
-		<div class="container">	
-				<h3 class="w3l-heading">About me</h3>
+		<div class="container">
+			<h3 class="w3l-heading">自我认知</h3>
 			<div class="col-md-4 w3-about-top">
-				<img src="images/3.jpg" class="img-responsive" alt="about-img"/>
+				<img src="images/aa.jpg" class="img-responsive" alt="about-img" />
 			</div>
 			<div class="col-md-8 w3l-about">
-					<div class="w3ls-heading">
-						<h2>I'm a web designer ,我热爱IT行业,喜欢用代码表现我的想法,更对一些新奇炫酷的东西有着浓厚的兴趣</h2>
-					</div>
-					<div class="w3ls-about-info">
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc blandit interdum rutrum. Cras tincidunt rhoncus turpis. Nulla elit nibh, vehicula vitae tortor a, fermentum euismod erat. Phasellus vel eros sed sem luctus fringilla sed eleifend eros. Sed et elementum lectus. Aenean ultrices pharetra vestibulum. Praesent a turpis sed nunc auctor vehicula id a sapien. Proin at nulla commodo, pretium enim et, fringilla elit.</p>
-					</div>
-					<div class="w3l-button">
-						<a href="#" data-toggle="modal" data-target="#myModal">Click me</a>
-					</div>
-			</div>	
+				<div class="w3ls-heading">
+					<h2>I'm a web designer ,我热爱IT行业,喜欢用代码表现自己的想法,更对一些新奇炫酷的东西有着浓厚的兴趣, 2019世界依然很大.</h2>
+				</div>
+				<div class="w3ls-about-info">
+					<p> 软件工程专业毕业，计算机基础良好，能够完成工作中的技术难题, 责任感极强的我不允许在工作中有丝毫懈怠, 我喜欢帮助那些新来的同事, 因为不管是谁都是从技术小生成长过来的.
+						我喜欢做有挑战性的工作, 它能让我学到更多, 也能让我得到更多的满足感;我喜欢有计划的做事, 时间观念强, 毕竟一天只有二十四小时, GitHub LeetCode
+						HelloGithub是我常常光顾的网站, 毕竟那里有我想要的东西</p>
+				</div>
+				<div class="w3l-button">
+					<a href="#" data-toggle="modal" data-target="#myModal">Click me</a>
+				</div>
+			</div>
 			<div class="clearfix"></div>
 		</div>
-		
+
 	</div>
 	<!-- modal -->
 	<div class="modal about-modal fade" id="myModal" tabindex="-1" role="dialog">
 		<div class="modal-dialog" role="document">
 			<div class="modal-content">
-				<div class="modal-header"> 
-					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>						
-						<h4 class="modal-title">Vitae</h4>
-				</div> 
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+							aria-hidden="true">&times;</span></button>
+					<h4 class="modal-title">Vitae</h4>
+				</div>
 				<div class="modal-body">
-					<div class="about"> 
+					<div class="about">
 						<div class="col-md-4 col-sm-4  col-xs-4 about-left ">
-							<img src="" class="img-responsive" alt=""/>
+							<img src="" class="img-responsive" alt="" />
 						</div>
 						<div class="col-md-8 col-sm-8 col-xs-8 about-right wthree">
 							<h3>Hi, i'm <span>John M. Rich </span></h3>
@@ -150,318 +159,312 @@
 										<li><a href="#">www.cssmoban.com</a></li>
 									</ul>
 								</li>
-							</ul> 
-						</div> 
+							</ul>
+						</div>
 						<div class="clearfix"> </div>
+					</div>
 				</div>
 			</div>
 		</div>
-	</div>
 	</div>
 	<!-- //modal -->
 	<!-- Portfolio -->
-       <div class="portfolio" id="port">
-		       <div class="port-head">
-							<h3 class="w3l-heading">portfolio</h3>
-						</div>
-            <ul class="simplefilter">
-                <li class="active" data-filter="all">All</li>
-                <li data-filter="1">Design1</li>
-                <li data-filter="2">Design2</li>
-                <li data-filter="3">Design3</li>
-            </ul>
-     
-            <div class="filtr-container">
-                <div class="  filtr-item gallery-t" data-category="1, 3" data-sort="Busy streets">
-				 <a href="images/b.jpg" class="b-link-stripe b-animate-go  thickbox">
-	
+	<div class="portfolio" id="port">
+		<div class="port-head">
+			<h3 class="w3l-heading">项目展示</h3>
+		</div>
+		<ul class="simplefilter">
+			<li class="active" data-filter="all">All</li>
+			<li data-filter="1">Item1</li>
+			<li data-filter="2">Item2</li>
+			<li data-filter="3">Item3</li>
+		</ul>
+
+		<div class="filtr-container">
+			<div class="  filtr-item gallery-t" data-category="1, 3" data-sort="Busy streets">
+				<a href="images/b.jpg" class="b-link-stripe b-animate-go  thickbox">
+
 					<figure class="w3ls-gallery">
-					 <img src="images/b.jpg" class="img-responsive" alt=" " />	<figcaption class="w3layouts-caption">
-							<h3>my designs</h3>
-							
+						<img src="images/b.jpg" class="img-responsive" alt=" " />
+						<figcaption class="w3layouts-caption">
+							<h3>my items</h3>
+
 						</figcaption>
 					</figure>
 				</a>
-                </div>
-				<div class=" filtr-item" data-category="1, 3" data-sort="City wonders">
-                    <a href="images/d.jpg" class="b-link-stripe b-animate-go  thickbox">
-
-					<figure class="w3ls-gallery">
-					 <img src="images/d.jpg" class="img-responsive" alt=" " />	<figcaption class="w3layouts-caption">
-							<h3>my designs</h3>
-						
-						</figcaption>
-					</figure>
-				</a>
-
-                </div>
-				<div class=" filtr-item" data-category="2" data-sort="Luminous night">
-                   <a href="images/c.jpg" class="b-link-stripe b-animate-go  thickbox">
-
-					<figure class="w3ls-gallery">
-					 <img src="images/c.jpg" class="img-responsive" alt=" " />	<figcaption class="w3layouts-caption">
-							<h3>my designs</h3>
-							
-						</figcaption>
-					</figure>
-				</a>
-                </div>
-                <div class="  filtr-item gallery-t" data-category="1, 3" data-sort="Busy streets">
-				 <a href="images/b.jpg" class="b-link-stripe b-animate-go  thickbox">
-	
-					<figure class="w3ls-gallery">
-					 <img src="images/b.jpg" class="img-responsive" alt=" " />	<figcaption class="w3layouts-caption">
-							<h3>my designs</h3>
-							
-						</figcaption>
-					</figure>
-				</a>
-                </div>
-                <div class="  filtr-item" data-category="3" data-sort="In production">
-                   <a href="images/e.jpg" class="b-link-stripe b-animate-go  thickbox">
-
-					<figure class="w3ls-gallery">
-					 <img src="images/e.jpg" class="img-responsive" alt=" " />	<figcaption class="w3layouts-caption">
-							<h3>my designs</h3>
-							
-						</figcaption>
-					</figure>
-				</a>
-
-                </div>
-                <div class=" filtr-item" data-category="3, 2" data-sort="Industrial site">
-                  <a href="images/g.jpg" class="b-link-stripe b-animate-go  thickbox">
-
-					<figure class="w3ls-gallery">
-					 <img src="images/g.jpg" class="img-responsive" alt=" " />	<figcaption class="w3layouts-caption">
-							<h3>my designs</h3>
-							
-						</figcaption>
-					</figure>
-				</a>
-                </div>
-                <div class=" filtr-item" data-category="2, 3" data-sort="Peaceful lake">
-                    <a href="images/f.jpg" class="b-link-stripe b-animate-go  thickbox">
-
-					<figure class="w3ls-gallery">
-					 <img src="images/f.jpg" class="img-responsive" alt=" " />	<figcaption class="w3layouts-caption">
-							<h3>my designs</h3>
-							
-						</figcaption>
-					</figure>
-					</a>
-                </div>
-                 <div class="  filtr-item gallery-t" data-category="1, 3" data-sort="Busy streets">
-				 <a href="images/b.jpg" class="b-link-stripe b-animate-go  thickbox">
-	
-					<figure class="w3ls-gallery">
-					 <img src="images/b.jpg" class="img-responsive" alt=" " />	<figcaption class="w3layouts-caption">
-							<h3>my designs</h3>
-							
-						</figcaption>
-					</figure>
-				</a>
-                </div>
-               <div class="clearfix"> </div>
-	        </div>
-		 </div>
-<!-- //Portfolio -->
-<div class="tlinks">Collect from <a href="http://www.cssmoban.com/" >建站模板</a></div>
-<!--Education-->
-	<div id="edu" class="agile-edu">
-		<div class="container">	
-				<h3 class="w3l-heading">Education</h3>
-			<div class="work-info"> 
-				<div class="col-md-6 col-sm-6 col-xs-6 work-right work-right2"> 
-				</div>
-				<div class="col-md-6  col-sm-6 col-xs-6  work-left work-left2"> 
-					<div class="col-md-6  col-sm-6 col-xs-6  work1">
-						<h4>Lorem ipsum</h4>
-						<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p></div>
-					<div class="col-md-6  col-sm-6 col-xs-6  work2">
-						<h5> University</h5>
-						<span></span>
-					</div>
-				</div>
 			</div>
-			<div class="work-info"> 
-				<div class="col-md-6  col-sm-6 col-xs-6"> 
-				</div>
-				<div class="col-md-6  col-sm-6 col-xs-6  work-right"> 
-					<div class="col-md-6  col-sm-6 col-xs-6 work2">
-						<span></span>
-						<h5>University</h5>
-					</div>	
-					<div class="col-md-6  col-sm-6 col-xs-6  work-right1">
-						<h4>Lorem ipsum</h4>
-						<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
-					</div>
-				</div>
-				<div class="clearfix"> </div>
+			<div class=" filtr-item" data-category="1, 3" data-sort="City wonders">
+				<a href="images/d.jpg" class="b-link-stripe b-animate-go  thickbox">
+
+					<figure class="w3ls-gallery">
+						<img src="images/d.jpg" class="img-responsive" alt=" " />
+						<figcaption class="w3layouts-caption">
+							<h3>my items</h3>
+
+						</figcaption>
+					</figure>
+				</a>
+
 			</div>
-			<div class="work-sec-2">
-			<div class="work-info"> 
-				<div class="col-md-6  col-sm-6 col-xs-6  work-right work-right2"> 
-				</div>
-				<div class="col-md-6  col-sm-6 col-xs-6  work-left work-left2 "> 
-					<div class="col-md-6 col-sm-6 col-xs-6  work1">
-						<h4>Lorem ipsum</h4>
-						<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p></div>
-					<div class="col-md-6  col-sm-6 col-xs-6  work2">
-						<h5> University</h5>
-						<span></span>
-					</div>
-				</div>
+			<div class=" filtr-item" data-category="2" data-sort="Luminous night">
+				<a href="images/c.jpg" class="b-link-stripe b-animate-go  thickbox">
+
+					<figure class="w3ls-gallery">
+						<img src="images/c.jpg" class="img-responsive" alt=" " />
+						<figcaption class="w3layouts-caption">
+							<h3>my items</h3>
+
+						</figcaption>
+					</figure>
+				</a>
 			</div>
-			<div class="work-info"> 
-				<div class="col-md-6  col-sm-6 col-xs-6 "> 
-				</div>
-				<div class="col-md-6  col-sm-6 col-xs-6  work-right"> 
-					<div class="col-md-6  col-sm-6 col-xs-6  work2">
-						<span></span>
-						<h5>University</h5>
-					</div>	
-					<div class="col-md-6 col-sm-6 col-xs-6  work-right1">
-						<h4>Lorem ipsum</h4>
-						<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p> </div>
-				</div>
-				<div class="clearfix"> </div>
+			<div class="  filtr-item gallery-t" data-category="1, 3" data-sort="Busy streets">
+				<a href="images/b.jpg" class="b-link-stripe b-animate-go  thickbox">
+
+					<figure class="w3ls-gallery">
+						<img src="images/b.jpg" class="img-responsive" alt=" " />
+						<figcaption class="w3layouts-caption">
+							<h3>my items</h3>
+
+						</figcaption>
+					</figure>
+				</a>
 			</div>
-			<span class="edu-circle"></span>
+			<div class="  filtr-item" data-category="3" data-sort="In production">
+				<a href="images/e.jpg" class="b-link-stripe b-animate-go  thickbox">
+
+					<figure class="w3ls-gallery">
+						<img src="images/e.jpg" class="img-responsive" alt=" " />
+						<figcaption class="w3layouts-caption">
+							<h3>my items</h3>
+
+						</figcaption>
+					</figure>
+				</a>
+
 			</div>
+			<div class=" filtr-item" data-category="3, 2" data-sort="Industrial site">
+				<a href="images/g.jpg" class="b-link-stripe b-animate-go  thickbox">
+
+					<figure class="w3ls-gallery">
+						<img src="images/g.jpg" class="img-responsive" alt=" " />
+						<figcaption class="w3layouts-caption">
+							<h3>my items</h3>
+
+						</figcaption>
+					</figure>
+				</a>
+			</div>
+			<div class=" filtr-item" data-category="2, 3" data-sort="Peaceful lake">
+				<a href="images/f.jpg" class="b-link-stripe b-animate-go  thickbox">
+
+					<figure class="w3ls-gallery">
+						<img src="images/f.jpg" class="img-responsive" alt=" " />
+						<figcaption class="w3layouts-caption">
+							<h3>my items</h3>
+
+						</figcaption>
+					</figure>
+				</a>
+			</div>
+			<div class="  filtr-item gallery-t" data-category="1, 3" data-sort="Busy streets">
+				<a href="images/b.jpg" class="b-link-stripe b-animate-go  thickbox">
+
+					<figure class="w3ls-gallery">
+						<img src="images/b.jpg" class="img-responsive" alt=" " />
+						<figcaption class="w3layouts-caption">
+							<h3>my items</h3>
+
+						</figcaption>
+					</figure>
+				</a>
+			</div>
+			<div class="clearfix"> </div>
 		</div>
 	</div>
-<!--//Education-->
-<div class="agile-border">
-	<span></span>
-</div>
-<!-- work-experience-->
+	<!-- //Portfolio -->
+
+	<!--Education-->
+	<div id="edu" class="agile-edu">
+		<div class="container">
+			<h3 class="w3l-heading">技能展示</h3>
+			<div id="container" style="height: 500px;margin: 40px auto;width: 70%;"></div>
+
+			<div class="clearfix"> </div>
+		</div>
+		<span class="edu-circle"></span>
+	</div>
+	</div>
+	</div>
+	<!--//Education-->
+	<div class="agile-border">
+		<span></span>
+	</div>
+	<!-- work-experience-->
 	<div id="exp" class="agile-edu exp">
-		<div class="container">	
-				<h3 class="w3l-heading">Experience</h3>
-			<div class="work-info"> 
-				<div class="col-md-6  col-sm-6 col-xs-6  work-right work-right2"> 
+		<div class="container">
+			<h3 class="w3l-heading">项目简介</h3>
+			<div class="work-info">
+				<div class="col-md-6  col-sm-6 col-xs-6  work-right work-right2">
 				</div>
-				<div class="col-md-6  col-sm-6 col-xs-6  work-left work-left2"> 
+				<div class="col-md-6  col-sm-6 col-xs-6  work-left work-left2">
 					<div class="col-md-6  col-sm-6 col-xs-6  work1">
 						<h4>Lorem ipsum</h4>
-						<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p></div>
+						<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+							laudantium.</p>
+					</div>
 					<div class="col-md-6  col-sm-6 col-xs-6 work2">
 						<h5> Company Name</h5>
 						<span></span>
 					</div>
 				</div>
 			</div>
-			<div class="work-info"> 
-				<div class="col-md-6  col-sm-6 col-xs-6 "> 
+			<div class="work-info">
+				<div class="col-md-6  col-sm-6 col-xs-6 ">
 				</div>
-				<div class="col-md-6  col-sm-6 col-xs-6 work-right"> 
+				<div class="col-md-6  col-sm-6 col-xs-6 work-right">
 					<div class="col-md-6 col-sm-6 col-xs-6 work2">
 						<span></span>
 						<h5>Company Name</h5>
-					</div>	
+					</div>
 					<div class="col-md-6  col-sm-6 col-xs-6 work-right1">
 						<h4>Lorem ipsum</h4>
-						<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
+						<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+							laudantium.</p>
 					</div>
 				</div>
 				<div class="clearfix"> </div>
 			</div>
 			<div class="work-2">
-			<div class="work-info"> 
-				<div class="col-md-6  col-sm-6 col-xs-6 work-right work-right2"> 
-				</div>
-				<div class="col-md-6  col-sm-6 col-xs-6  work-left work-left2 "> 
-					<div class="col-md-6  col-sm-6 col-xs-6 work1">
-						<h4>Lorem ipsum</h4>
-						<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p></div>
-					<div class="col-md-6  col-sm-6 col-xs-6  work2">
-						<h5> Company Name</h5>
-						<span></span>
+				<div class="work-info">
+					<div class="col-md-6  col-sm-6 col-xs-6 work-right work-right2">
+					</div>
+					<div class="col-md-6  col-sm-6 col-xs-6  work-left work-left2 ">
+						<div class="col-md-6  col-sm-6 col-xs-6 work1">
+							<h4>Lorem ipsum</h4>
+							<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+								laudantium.</p>
+						</div>
+						<div class="col-md-6  col-sm-6 col-xs-6  work2">
+							<h5> Company Name</h5>
+							<span></span>
+						</div>
 					</div>
 				</div>
-			</div>
-			<div class="work-info"> 
-				<div class="col-md-6  col-sm-6 col-xs-6 "> 
+				<div class="work-info">
+					<div class="col-md-6  col-sm-6 col-xs-6 ">
+					</div>
+					<div class="col-md-6  col-sm-6 col-xs-6 work-right">
+						<div class="col-md-6  col-sm-6 col-xs-6 work2">
+							<span></span>
+							<h5>Company Name</h5>
+						</div>
+						<div class="col-md-6  col-sm-6 col-xs-6 work-right1">
+							<h4>Lorem ipsum</h4>
+							<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+								laudantium.</p>
+						</div>
+					</div>
+					<div class="clearfix"> </div>
 				</div>
-				<div class="col-md-6  col-sm-6 col-xs-6 work-right"> 
-					<div class="col-md-6  col-sm-6 col-xs-6 work2">
-						<span></span>
-						<h5>Company Name</h5>
-					</div>	
-					<div class="col-md-6  col-sm-6 col-xs-6 work-right1">
-						<h4>Lorem ipsum</h4>
-						<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p> </div>
-				</div>
-				<div class="clearfix"> </div>
+				<span class="edu-circle"></span>
 			</div>
-			<span class="edu-circle"></span>
 		</div>
 	</div>
-</div>
-<!--//work-experience-->
-<!-- contact -->
-<div id="contact" class="w3_agileits-contact">
-		<div class="container">	
-				<h3 class="w3l-heading">contact</h3>
-				<div class="w3_agile-contact  jarallax text-center">
-					<form action="#" method="get">
-						<input type="text" placeholder="Name" name="name" class="name" required>
-						<input type="text" placeholder="Phone Number" name="phone" class="name" required>
-						<input type="email" placeholder="Email" name="email" class="email" required>
-						<textarea name="message" placeholder="Message"></textarea>
-						<input type="submit" value="send">
-					</form>
-					<h4>or</h4>
-					<a href="mailto:info@example.com">info@example.com</a>
-					<h5>+12 345 6789</h5>
-					<ul class="social-icons-w3_agile">
-						<li><a href="#" class="fa fa-facebook icon icon-border facebook"> </a></li>
-						<li><a href="#" class="fa fa-twitter icon icon-border twitter"> </a></li>
-						<li><a href="#" class="fa fa-google-plus icon icon-border googleplus"> </a></li>
-					</ul>
-				</div>
-		</div>	
-</div>	
-<!-- footer -->
-<div class="agileits_w3layouts-footer text-center">
-	<div class="container">
-		<p>Copyright &copy; 2017.Company name All rights reserved.More Templates <a href="http://www.cssmoban.com/" target="_blank" title="模板之家">模板之家</a> - Collect from <a href="http://www.cssmoban.com/" title="网页模板" target="_blank">网页模板</a></p>
+	<!--//work-experience-->
+	<!-- contact -->
+	<div id="contact" class="w3_agileits-contact">
+		<div class="container">
+			<h3 class="w3l-heading">联系我</h3>
+			<div class="w3_agile-contact  jarallax text-center" style="margin-top: 100px">
+				
+				<a href="https://mail.163.com">nicy_wang@126.com</a>
+				<h5>18900969685</h5>
+			</div>
+		</div>
 	</div>
-</div>	
-<!-- //footer -->	
-<!-- //contact -->
-<!-- PopUp-Box-JavaScript -->
-		<script src="js/jquery.chocolat.js"></script>
-		<script type="text/javascript">
-			$(function() {
-				$('.filtr-item a').Chocolat();
-			});
-		</script>
-	<!-- //PopUp-Box-JavaScript -->	
+	<!-- footer -->
+	<div class="agileits_w3layouts-footer text-center">
+		<div class="container">
+			<!-- <p>Copyright &copy; 2017.Company name All rights reserved.More Templates <a href="http://www.cssmoban.com/"
+					target="_blank" title="模板之家">模板之家</a> - Collect from <a href="http://www.cssmoban.com/" title="网页模板"
+					target="_blank">网页模板</a></p> -->
+		</div>
+	</div>
+	<!-- //footer -->
+	<!-- //contact -->
+	<!-- PopUp-Box-JavaScript -->
+	<script src="js/jquery.chocolat.js"></script>
+	<script type="text/javascript">
+		$(function () {
+			$('.filtr-item a').Chocolat();
+		});
+	</script>
+	<!-- //PopUp-Box-JavaScript -->
 	<!-- fliter-JavaScript -->
-		<script src="js/jquery.filterizr.js"></script>
-		<script src="js/controls.js"></script>
-		<script type="text/javascript">
-			$(function() {
-				$('.filtr-container').filterizr();
-			});
-		</script>
+	<script src="js/jquery.filterizr.js"></script>
+	<script src="js/controls.js"></script>
+	<script type="text/javascript">
+		$(function () {
+			$('.filtr-container').filterizr();
+		});
+	</script>
 	<!-- //fliter-JavaScript -->
-<script src="js/jarallax.js"></script>
-<script src="js/SmoothScroll.min.js"></script>
-<script type="text/javascript">
-	/* init Jarallax */
-	$('.jarallax').jarallax({
-		speed: 0.5,
-		imgWidth: 1366,
-		imgHeight: 768
-	})
-</script>
-<!-- start-smoth-scrolling -->
+	<script src="js/jarallax.js"></script>
+	<script src="js/SmoothScroll.min.js"></script>
+	<script type="text/javascript">
+		/* init Jarallax */
+		$('.jarallax').jarallax({
+			speed: 0.5,
+			imgWidth: 1366,
+			imgHeight: 768
+		})
+	</script>
+	<!-- start-smoth-scrolling -->
 	<script type="text/javascript" src="js/easing.js"></script>
-<!-- //here ends scrolling icon -->
-	
+	<!-- //here ends scrolling icon -->
 
+	<script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts/echarts.min.js"></script>
+	<script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts-gl/echarts-gl.min.js"></script>
+	<script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts-stat/ecStat.min.js"></script>
+	<script type="text/javascript"
+		src="http://echarts.baidu.com/gallery/vendors/echarts/extension/dataTool.min.js"></script>
+	<script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts/map/js/china.js"></script>
+	<script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts/map/js/world.js"></script>
+	<script type="text/javascript"
+		src="https://api.map.baidu.com/api?v=2.0&ak=xfhhaTThl11qYVrqLZii6w8qE5ggnhrY&__ec_v__=20190126"></script>
+	<script type="text/javascript"
+		src="http://echarts.baidu.com/gallery/vendors/echarts/extension/bmap.min.js"></script>
+	<script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/simplex.js"></script>
+	<script type="text/javascript">
+		var dom = document.getElementById("container");
+		var myChart = echarts.init(dom);
+		var app = {};
+		option = null;
+		option = {
+			xAxis: {
+				type: 'category',
+				data: ['CSS','HTML',  'Vue', 'React', 'Angular', 'Node.js', 'JQuary', '小程序', 'Java', 'c++', '数据结构', 'PHP', 'MySQL', 'MongoDB', 'Jsp'],
+				offset: -40,
+				axisLabel: {
+					interval: 0,
+					rotate: 40
+				}
+			},
+			yAxis: {
+				type: 'category',
+				data: ['不会', '了解', '掌握', '熟练', '精通'],
+			},
+			series: [{
+				data: ['精通', '精通', '精通', '熟练', '熟练', '掌握', '精通', '熟练', '了解', '了解', '了解', '了解', '掌握', '掌握', '了解'],
+				type: 'bar'
+			}],
+		};
+		
+		if (option && typeof option === "object") {
+			myChart.setOption(option, true);
+		}
+	</script>
 </body>
+
 </html>
